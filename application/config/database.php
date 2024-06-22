@@ -63,10 +63,10 @@ $query_builder = TRUE;
 
 $db['default'] = array(
 	'dsn'	=> '',
-	'hostname' => 'localhost',
+	'hostname' => '127.0.0.1',
 	'username' => 'root',
-	'password' => '',
-	'database' => 'irestora_plus',
+	'password' => '123123123',
+	'database' => 'noon_irestora',
 	'dbdriver' => 'mysqli',
 	'dbprefix' => '',
 	'pconnect' => FALSE,

@@ -52,8 +52,11 @@
  *     production
  *
  * NOTE: If you change these, also change the error_reporting() code below
- */ 
-define('ENVIRONMENT', 'is_install');
+ */
+//define('ENVIRONMENT', isset($_SERVER['CI_ENV']) ? $_SERVER['CI_ENV'] : 'development');
+//define('ENVIRONMENT', 'production');
+define('ENVIRONMENT', 'development');
+//define('ENVIRONMENT', 'is_install');
 /*
  *---------------------------------------------------------------
  * ERROR REPORTING

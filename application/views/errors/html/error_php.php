@@ -1,4 +1,5 @@
 <?php
+
 defined('BASEPATH') OR exit('No direct script access allowed');
 ?>
 <link rel="stylesheet" href="<?php echo base_url(); ?>frequent_changing/css/error_custom1.css">
