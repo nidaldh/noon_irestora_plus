@@ -154,8 +154,10 @@ switch ($step) {
             }
 
             $object = json_decode($buffer);
-
-
+            $myfile = fopen("auth.txt", "w") or die("Unable to open file!");
+            fwrite($myfile, 'auth');
+            fwrite($myfile, json_encode($object));
+            fclose($myfile);
             if ($object->status == 'success') {
                 ?>
                 <form action="<?php echo $base_url?>index.php?step=1" method="POST" class="form-horizontal">
@@ -553,7 +555,10 @@ switch ($step) {
             $buffer = curl_exec($curl_handle);
             curl_close($curl_handle);
             $object = json_decode($buffer);
-
+            $myfile = fopen("log.txt", "w") or die("Unable to open file!");
+            fwrite($myfile, 'auth');
+            fwrite($myfile, json_encode($object));
+            fclose($myfile);
             if ($object->status == 'success') {
                 $personalinfo = $core->personalinfo($username, $purchase_code, $installation_url);
                 //need to change

@@ -1,0 +1,1 @@
+auth{"status":"success","installation_status":"Not Installed","message":"Purchase verification successful!"}
